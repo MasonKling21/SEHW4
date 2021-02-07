@@ -15,6 +15,7 @@ class TestModules(unittest.TestCase):
         self.assertEqual(listAverage([20,21,22]), 21)
         self.assertEqual(listAverage([2]), 2)
         self.assertEqual(listAverage([]), 'Error! Invalid list.')
+        self.assertEqual(listAverage([2,3,'a',4]), 'Error! Invalid list.')
 
     def testName(self):
         self.assertEqual(fullName('Joe', 'Shmo'), 'Joe Shmo')
